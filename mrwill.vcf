@@ -1,1 +1,11 @@
-
+BEGIN:VCARD
+VERSION:3.0
+N:Mr;Will;;;
+FN:William Gardner
+ORG:Good Vibes Department
+TITLE:Professional Good-Vibes Distributor
+TEL;TYPE=CELL:+16023739455
+EMAIL:simplywill@gmail.com
+URL:https://mr-will-i-am.github.io/first-contact/
+NOTE:You tapped. That already tells me I like you.
+END:VCARD
