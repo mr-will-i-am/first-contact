@@ -3,20 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const eyebrow = document.getElementById("eyebrow-text");
   const message = document.getElementById("main-message");
 
-  if (card) {
-    card.animate(
-      [
-        { opacity: 0, transform: "translateY(12px)" },
-        { opacity: 1, transform: "translateY(0)" }
-      ],
-      {
-        duration: 500,
-        easing: "ease-out",
-        fill: "forwards"
-      }
-    );
-  }
-
   const eyebrowLines = [
     "look what you found...",
     "well well well...",
@@ -42,11 +28,53 @@ document.addEventListener("DOMContentLoaded", () => {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
+  if (card) {
+    card.animate(
+      [
+        { opacity: 0, transform: "translateY(12px)" },
+        { opacity: 1, transform: "translateY(0)" }
+      ],
+      {
+        duration: 500,
+        easing: "ease-out",
+        fill: "forwards"
+      }
+    );
+  }
+
   if (eyebrow) {
+    eyebrow.style.opacity = "0";
     eyebrow.textContent = getRandom(eyebrowLines);
+
+    eyebrow.animate(
+      [
+        { opacity: 0, transform: "translateY(4px)" },
+        { opacity: 1, transform: "translateY(0)" }
+      ],
+      {
+        duration: 500,
+        delay: 150,
+        easing: "ease-out",
+        fill: "forwards"
+      }
+    );
   }
 
   if (message) {
+    message.style.opacity = "0";
     message.textContent = getRandom(messages);
+
+    message.animate(
+      [
+        { opacity: 0, transform: "translateY(6px)" },
+        { opacity: 1, transform: "translateY(0)" }
+      ],
+      {
+        duration: 650,
+        delay: 250,
+        easing: "ease-out",
+        fill: "forwards"
+      }
+    );
   }
 });
