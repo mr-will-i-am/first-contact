@@ -133,3 +133,60 @@
     font-size: 0.92rem;
     line-height: 1.5;
   }
+
+  .social-icons {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .social-icons a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  
+    transition: all 0.25s ease;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: #cfd6ff;
+    transition: all 0.25s ease;
+  }
+
+  .social-icons a.instagram:hover {
+    background: radial-gradient(circle at 30% 30%, 
+      #feda75, 
+      #fa7e1e, 
+      #d62976, 
+      #962fbf, 
+      #4f5bd5
+    );
+  
+    box-shadow:
+      0 0 12px rgba(214, 41, 118, 0.6),
+      0 0 24px rgba(79, 91, 213, 0.4);
+  
+    transform: translateY(-2px) scale(1.05);
+  }
+  
+  .social-icons a.instagram:hover .icon {
+    fill: white;
+  }
+
+  .social-icons a:hover:not(.instagram) {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px) scale(1.05);
+  }
+  
+  .social-icons a:hover:not(.instagram) .icon {
+    fill: #ffffff;
+  }
