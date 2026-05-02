@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "Whatever you’ve got going on… I hope today tilts in your favor.",
     "You strike me as someone worth knowing.",
     "You’ve got good instincts. I like that.",
-    "There’s something solid about your vibe. Keep that.",
+    "You've got a great vibe.  Keep it up.",
     "You feel like one of the good ones.",
     "I have a feeling you make life more interesting.",
     "You’ve got a quietly impressive thing going on."
